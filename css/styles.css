@@ -201,21 +201,24 @@ img {
   overflow: hidden;
 }
 .feature__icon_box {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
   height: 112px;
   margin-bottom: 8px;
   border-radius: 4px;
   border: 1px solid #8e8f99;
-  background-color: #f4f4fd;
+  background-color: #f4f4fd; */
+  display: none;
 }
 .feature__list {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 .feature__item {
-  flex-basis: calc((100% - 72px) / 4);
+  /* flex-basis: calc((100% - 72px) / 4); */
+  width: 100%;
 }
 .feature__subtitle {
   margin-bottom: 8px;
@@ -223,7 +226,8 @@ img {
 /**! SECTION TEAMCARD !**/
 .teamcard {
   text-align: center;
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  padding: 96px 0;
   background: #f4f4fd;
 }
 .teamcard__title {
@@ -238,12 +242,15 @@ img {
 }
 .teamcard__list {
   display: flex;
-  gap: 24px;
+  /* gap: 24px; */
+  gap: 72px;
+  flex-wrap: wrap;
 }
 .teamcard__item {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
-  flex-basis: calc((100% - 72px) / 4);
+  width: 100%;
+  /* flex-basis: calc((100% - 72px) / 4); */
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -525,7 +532,6 @@ margin-bottom: 16px;
   margin: 0 auto;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-
 }
 .modal__label {
   display: block;
@@ -660,4 +666,55 @@ justify-content: center;
 .footer__form_svg{
   fill: #fff;
   margin-left: 16px;
+}
+@media screen and (min-width:320px){
+  .container{
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+}
+@media screen and (min-width:768px){
+  .container{
+  max-width: 768px;
+  }
+  .feature__item {
+    flex-basis: calc((100% - 48px) / 2);
+    padding: 0;
+  }
+  .feature__list {
+    gap: 72px 24px;
+  }
+  .teamcard__item{
+    flex-basis: calc((100% - 48px) / 2);
+  }
+  .teamcard__list {
+    gap: 64px 24px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .feature__item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+  .feature__icon_box{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  background-color: #f4f4fd;
+  }
+  .teamcard__item{
+    flex-basis: calc((100% - 72px) / 4);
+  }
 }
