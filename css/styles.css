@@ -151,45 +151,43 @@ img {
   z-index: 1;
   width: 100vw;
   height: 100vh;
-background-color:#ffffff;
-padding: 72px 24px 40px 16px;
-opacity: 0;
-visibility: hidden;
-pointer-events: none;
+  background-color:#ffffff;
+  padding: 72px 24px 40px 16px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 .nav__close_btn{
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: transparent;
-position: absolute;
-top: 32px;
-right: 32px;
+  position: absolute;
+  top: 32px;
+  right: 32px;
   cursor: pointer;
   border: none; 
   padding: 0;
   width: 24px;
-height: 24px;
-background-color: #E7E9FC; 
-border-radius: 50%;
+  height: 24px;
+  background-color: #E7E9FC; 
+  border-radius: 50%;
 }
 .mob__list {
   display:flex;
-flex-direction: column;
+  flex-direction: column;
   gap: 40px;
 }
 .mob__item {
   color: #2E2F42);
-font-size: 36px;
-font-weight: 700;
-line-height: 1.11;
-letter-spacing: 0.02em;
-text-transform: capitalize;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 .nav__link_mob {
-}
-.header__line {
-  color:  #404BBF;
+  
 }
 .address__list_mob {
   display: flex;
@@ -199,6 +197,11 @@ text-transform: capitalize;
   margin-bottom: 48px;
 }
 .address__item_mob {
+  color: #434455;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.20; 
+  letter-spacing: 0.02em;
 }
 .address__link_mob {
 }
@@ -212,7 +215,7 @@ text-transform: capitalize;
   height: 40px;
 }
 .teamcard__soc_link_mob {
-    width: 100%;
+  width: 100%;
   height: 100%;
   background-color: #4d5ae5;
   border-radius: 50%;
@@ -326,6 +329,12 @@ text-transform: capitalize;
   width: 100%;
 }
 .feature__subtitle {
+  color:  #2E2F42;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-transform: capitalize;
   margin-bottom: 8px;
 }
 /**! SECTION TEAMCARD !**/
@@ -486,7 +495,7 @@ text-transform: capitalize;
   max-width: 264px;
 }
 .footer__box_logoandtext {
-  margin-right: 120px;
+  /* margin-right: 120px; */
 }
 .footer__soc-text {
   color: #fff;
