@@ -186,6 +186,7 @@ img {
   text-transform: capitalize;
 }
 .nav__link_mob {
+  color: inherit;
 }
 .address__list_mob {
   display: flex;
@@ -193,20 +194,21 @@ img {
   gap: 24px;
   margin-top: 168px;
   margin-bottom: 48px;
-}
-.address__item_mob {
-  color: #434455;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+.address__item_mob {
+}
 .address__link_mob {
+  color: #434455;
 }
 .teamcard__soc_list_mob {
   display: flex;
   justify-content: center;
   gap: 40px;
+  margin-top: auto;
 }
 .teamcard__soc_item_mob {
   width: 40px;
@@ -555,7 +557,8 @@ img {
   pointer-events: auto;
 }
 .modal {
-  width: 408px;
+  width: calc(100% - 32px);
+  max-width: 408px;
   min-height: 584px;
   border-radius: 4px;
   background-color: #fcfcfc;
@@ -592,6 +595,10 @@ img {
 .modal__btn:focus {
   background-color: #404bbf;
   border: none;
+}
+.line__text{
+  display: flex;
+  flex-direction: column;
 }
 .modal__svg_close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -701,6 +708,7 @@ img {
   margin-bottom: 24px;
 }
 .check__text {
+  display: flex;
   color: #8e8f99;
   font-size: 12px;
   font-weight: 400;
@@ -725,7 +733,7 @@ img {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.check__modal:checked + .check__text span {
+.check__modal:checked + .check__text > .check__square {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
@@ -892,13 +900,23 @@ img {
   .footer__box_logoandtext {
     margin-right: 120px;
   }
-  .footer__form{
-    display: flex;
+  .footer__form {
+    flex-direction: row;
     gap: 24px;
   }
+  .line__text{
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  }
+  .subscribe__text{
+    text-align: start;
+  }
+  .footer__soc-text{
+    text-align: start;
+  }
 }
-}
-@media screen and (min-widh: 1158px) {
+@media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     padding-left: 15px;
@@ -957,6 +975,7 @@ img {
     padding: 120px 0;
   }
   .teamcard__list {
+    max-width: 100%;
     gap: 24px;
   }
   .teamcard__item {
@@ -977,6 +996,7 @@ img {
   }
   .footer__container {
     flex-direction: row;
-    align-items: baseline;
+  }
+  .footer__form{
   }
 }
