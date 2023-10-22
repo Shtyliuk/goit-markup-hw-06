@@ -906,7 +906,7 @@ color:  #4D5AE5;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
-    max-width: 768px;
+    /* max-width: 768px; */
   }
   .logo__footer {
     display: inline-block;
@@ -1011,13 +1011,12 @@ color:  #4D5AE5;
   .footer {
     padding: 100px 0;
   }
-  .footer__container {
-    flex-direction: row;
-  }
   .logo__footer {
     display: inline-block;
   }
   .footer__container{
+    flex-direction: row;
+    gap: unset;
     flex-wrap: nowrap;
     display: flex;
     justify-content: space-around;
